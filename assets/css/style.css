@@ -64,18 +64,18 @@ a {
     margin-right: auto;
 }
 
-.line-clamp{
+.line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.line-clamp.line-2{
+.line-clamp.line-2 {
     --line-clamp: 2;
 }
 
-.break-all{
+.break-all {
     word-break: break-all;
 }
 
@@ -340,7 +340,7 @@ a {
     border-radius: 12px;
 }
 
-.popular .course-item:hover{
+.popular .course-item:hover {
     border-color: transparent;
     box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
@@ -398,11 +398,77 @@ a {
     color: #171100;
 }
 
-.popular .course-item .book-btn{
+.popular .course-item .book-btn {
     border: none;
 }
 
-.popular .course-item .book-btn:hover{
+.popular .course-item .book-btn:hover {
     color: #fff;
     background: var(--primary-color);
+}
+
+/* Feedback */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-item {
+    display: flex;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    font-family: var(--font-heading);
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB3;
+}
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active{
+    background: var(--primary-color);
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    font-style: italic;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
 }
